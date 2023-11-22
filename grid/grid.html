@@ -14,34 +14,37 @@
         .calendar{
             display: grid;
             grid-template-columns: repeat(7,1fr);
+            grid-template-rows: 30px repeat(5,75px);
             row-gap: 20px;
             column-gap: 10px;
         }
-        .date{
+        .date,.day {
             background-color: #48CAE4;
-            height: 75px;
             font-size: 1.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
         }
-        .other-month{
+        .other-month,.day{
             background-color: #BBD0FF;
+        }
+        .day{
+            font-size: 1rem;
+
         }
     </style>
 </head>
 
 <body>
 <div class="calendar">
-    <div class="daya">S</div>
-    <div class="daya">M</div>
-    <div class="daya">T</div>
-    <div class="daya">W</div>
-    <div class="daya">T</div>
-    <div class="daya">F</div>
-    <div class="daya">F</div>
-    <div class="daya">S</div>
+    <div class="day">S</div>
+    <div class="day">M</div>
+    <div class="day">T</div>
+    <div class="day">W</div>
+    <div class="day">T</div>
+    <div class="day">F</div>
+    <div class="day">S</div>
     <div class="date other-month">30</div>
     <div class="date other-month">31</div>
     <div class="date">1</div>
